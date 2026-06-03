@@ -1,0 +1,66 @@
+<svg width="680" height="560" viewBox="0 0 680 560" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Packify archive file format</title>
+  <desc>The Packify archive layout: a header containing archive metadata (magic number, version, files count) and files metadata (MD A, MD B, MD C), followed by a data section holding File A in cyan, File B in pink, and File C in green. To the right, the three source files are shown being packed into the archive.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="3" y="3" width="674" height="554" rx="18" fill="#0D0D16" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <path d="M32 14 L14 14 L14 32" fill="none" stroke="#FF2D9B" stroke-width="2" stroke-linecap="square"/>
+  <path d="M648 14 L666 14 L666 32" fill="none" stroke="#FF2D9B" stroke-width="2" stroke-linecap="square"/>
+  <path d="M32 546 L14 546 L14 528" fill="none" stroke="#FF2D9B" stroke-width="2" stroke-linecap="square"/>
+  <path d="M648 546 L666 546 L666 528" fill="none" stroke="#FF2D9B" stroke-width="2" stroke-linecap="square"/>
+
+  <g font-family="monospace">
+    <text x="210" y="46" text-anchor="middle" font-size="14" font-weight="bold" fill="#ECECF4">Archive</text>
+    <text x="538" y="46" text-anchor="middle" font-size="14" font-weight="bold" fill="#ECECF4">Files</text>
+
+    <rect x="58" y="66" width="304" height="462" rx="14" fill="#15151F" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+
+    <text x="72" y="88" font-size="11" fill="#6C6C7E">header</text>
+
+    <rect x="74" y="94" width="272" height="76" rx="8" fill="#1D1D2B" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+    <text x="210" y="112" text-anchor="middle" font-size="12" fill="#D6D6E4">archive meta data</text>
+    <text x="92" y="131" font-size="11" fill="#8E8E9E">&#8226; magic number</text>
+    <text x="92" y="147" font-size="11" fill="#8E8E9E">&#8226; version</text>
+    <text x="92" y="163" font-size="11" fill="#8E8E9E">&#8226; files count</text>
+
+    <rect x="74" y="182" width="272" height="126" rx="8" fill="#1D1D2B" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+    <text x="210" y="200" text-anchor="middle" font-size="12" fill="#D6D6E4">files meta data</text>
+    <rect x="92" y="210" width="236" height="20" rx="5" fill="#26263A"/>
+    <rect x="100" y="215" width="10" height="10" rx="2" fill="#00CCFF"/>
+    <text x="122" y="224" font-size="11" fill="#C2C2D0">MD A</text>
+    <rect x="92" y="234" width="236" height="20" rx="5" fill="#26263A"/>
+    <rect x="100" y="239" width="10" height="10" rx="2" fill="#FF2D9B"/>
+    <text x="122" y="248" font-size="11" fill="#C2C2D0">MD B</text>
+    <rect x="92" y="258" width="236" height="20" rx="5" fill="#26263A"/>
+    <rect x="100" y="263" width="10" height="10" rx="2" fill="#7FFF44"/>
+    <text x="122" y="272" font-size="11" fill="#C2C2D0">MD C</text>
+    <text x="210" y="296" text-anchor="middle" font-size="11" fill="#6E6E82">each &#8594; size &#183; name length &#183; name</text>
+
+    <line x1="64" y1="318" x2="356" y2="318" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+    <text x="72" y="334" font-size="11" fill="#6C6C7E">data</text>
+
+    <rect x="90" y="340" width="240" height="50" rx="10" fill="#00CCFF"/>
+    <text x="210" y="369" text-anchor="middle" font-size="12" font-weight="bold" fill="#064A5E">File A</text>
+    <rect x="90" y="398" width="240" height="50" rx="10" fill="#FF2D9B"/>
+    <text x="210" y="427" text-anchor="middle" font-size="12" font-weight="bold" fill="#5A1230">File B</text>
+    <rect x="90" y="456" width="240" height="50" rx="10" fill="#7FFF44"/>
+    <text x="210" y="485" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E5410">File C</text>
+
+    <text x="406" y="332" text-anchor="middle" font-size="11" fill="#8A8AA0">pack</text>
+    <line x1="446" y1="365" x2="368" y2="365" stroke="#8A8AA0" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="446" y1="423" x2="368" y2="423" stroke="#8A8AA0" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="446" y1="481" x2="368" y2="481" stroke="#8A8AA0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <rect x="450" y="340" width="178" height="50" rx="10" fill="#00CCFF"/>
+    <text x="539" y="369" text-anchor="middle" font-size="12" font-weight="bold" fill="#064A5E">File A</text>
+    <rect x="450" y="398" width="178" height="50" rx="10" fill="#FF2D9B"/>
+    <text x="539" y="427" text-anchor="middle" font-size="12" font-weight="bold" fill="#5A1230">File B</text>
+    <rect x="450" y="456" width="178" height="50" rx="10" fill="#7FFF44"/>
+    <text x="539" y="485" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E5410">File C</text>
+  </g>
+</svg>

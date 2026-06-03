@@ -1,5 +1,8 @@
 # PA File Format
 
+<p align="center">
+  <img src="../assets/packify-format.svg" alt="Packify" width="620"/>
+</p>
 
 ## Archive Header
 
