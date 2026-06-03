@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Packify icon</title>
+  <desc>Packify app icon: three stacked document sheets — green, pink, and cyan — on a dark radial-depth background.</desc>
+  <defs>
+    <radialGradient id="packifyBg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#20202E"/>
+      <stop offset="100%" stop-color="#0D0D16"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded-square tile -->
+  <rect width="512" height="512" rx="114" fill="url(#packifyBg)"/>
+
+  <!-- Back sheet — green -->
+  <rect x="200" y="114" width="180" height="216" rx="22" fill="#7FFF44"/>
+  <!-- Middle sheet — pink -->
+  <rect x="166" y="148" width="180" height="216" rx="22" fill="#FF2D9B"/>
+  <!-- Front sheet — cyan -->
+  <rect x="132" y="182" width="180" height="216" rx="22" fill="#00CCFF"/>
+</svg>
