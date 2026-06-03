@@ -17,6 +17,19 @@ git clone https://github.com/0xFMD/Packify
 make
 ```
 
+### Nix
+
+If you have Nix installed, you can build without needing GCC or Make manually:
+
+```bash
+nix-build
+```
+
+```bash
+./result/bin/Packify -c example
+```
+
+
 ---
 
 ## Run
@@ -25,6 +38,7 @@ make
 ./Packify -c example
 ./Packify -i example.PA file.txt
 ./Packify -l example.PA
+./Packify -h
 ```
 
 ---
@@ -36,15 +50,3 @@ make clean
 ```
 
 ---
-
-## Nix
-
-If you have Nix installed, you can build without needing GCC or Make manually:
-
-```bash
-nix-build
-```
-
-```bash
-./result/bin/Packify -c example
-```

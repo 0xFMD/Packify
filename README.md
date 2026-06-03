@@ -27,44 +27,44 @@
 **Create an archive**
 
 ```bash
-Packify -c backup
-# creates backup.PA
+Packify -c example
+# creates example.PA
 ```
 
 **Insert a file**
 
 ```bash
-Packify -i backup.PA notes.txt
+Packify -i example.PA notes.txt
 ```
 
 **List files**
 
 ```bash
-Packify -l backup.PA
+Packify -l example.PA
 ```
 
 **Extract a file**
 
 ```bash
-Packify -x backup.PA notes.txt
+Packify -x example.PA notes.txt
 ```
 
 **Delete a file**
 
 ```bash
-Packify -d backup.PA notes.txt
+Packify -d example.PA notes.txt
 ```
 
 **Replace a file**
 
 ```bash
-Packify -r backup.PA old.txt new.txt
+Packify -r example.PA old.txt new.txt
 ```
 
 **Count files**
 
 ```bash
-Packify -n backup.PA
+Packify -n example.PA
 ```
 
 **Help**
